@@ -1,10 +1,10 @@
 /// A container for template variables.
-public class Context {
+open class Context {
   var dictionaries: [[String: Any?]]
 
   public let environment: Environment
 
-  init(dictionary: [String: Any]? = nil, environment: Environment? = nil) {
+  public init(dictionary: [String: Any]? = nil, environment: Environment? = nil) {
     if let dictionary = dictionary {
       dictionaries = [dictionary]
     } else {
